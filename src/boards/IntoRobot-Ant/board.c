@@ -24,17 +24,10 @@
 #include "utilities.h"
 #include "delay.h"
 #include "gpio.h"
-#include "gpio-ioe.h"
 #include "adc.h"
 #include "spi.h"
-#include "i2c.h"
 #include "uart.h"
 #include "timer.h"
-#include "gps.h"
-#include "mpl3115.h"
-#include "mag3110.h"
-#include "mma8451.h"
-#include "sx9500.h"
 #include "board-config.h"
 #include "rtc-board.h"
 #include "sx1276-board.h"
@@ -58,11 +51,11 @@ Gpio_t Led2;
 Gpio_t Led3;
 Gpio_t Led4;
 
+Gpio_t UsbDetect;
 /*
  * MCU objects
  */
 Adc_t Adc;
-I2c_t I2c;
 Uart_t Uart1;
 #if defined( USE_USB_CDC )
 Uart_t UartUsb;

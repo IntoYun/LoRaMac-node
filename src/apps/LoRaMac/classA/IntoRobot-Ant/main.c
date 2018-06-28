@@ -718,6 +718,9 @@ int main( void )
     BoardInitMcu( );
     BoardInitPeriph( );
 
+	  GpioWrite( &Led1, 0 );
+	  GpioWrite( &Led2, 0 );
+		GpioWrite( &Led3, 0 );
     DeviceState = DEVICE_STATE_INIT;
 
     while( 1 )
