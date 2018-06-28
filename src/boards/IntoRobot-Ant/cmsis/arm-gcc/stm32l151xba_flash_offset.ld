@@ -1,7 +1,7 @@
 /* Memory regions.*/ 
 MEMORY
 {
-  FLASH (rx) : ORIGIN = 0x08003000, LENGTH = 128K - 0x3000
+  FLASH (rx) : ORIGIN = 0x08004000, LENGTH = 128K - 0x4000
   RAM (rwx)  : ORIGIN = 0x20000000, LENGTH = 32K
 }
 
